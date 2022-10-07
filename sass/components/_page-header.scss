@@ -31,47 +31,45 @@
     color: var(--white-text);
 }
 
-.nav-item.current {
+.navigation__link--current {
     color: var(--accent);
     display: block;
     position: relative;
+        &: :after{
+            position: absolute;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: var(--accent);
+            border-radius: 2px;
+            bottom: -1px;
+        }
 }
-
-.item .current::after {
-    position: absolute;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent);
-    border-radius: 2px;
-    bottom: -1px;
-}
-
 
 /* Навигация  */
-.header-nav {
+.navigation {
     font-weight: 500;
     line-height: 1.143;
     letter-spacing: 0.02em;
 }
 
-.nav-item {
+.navigation__link {
     text-decoration: none;
     color: var(--main-text);
     transition: color var(--time-function);
 }
 
-.list-nav .nav-item {
+.navigation__list .navigation__link {
     display: block;
     padding: 32px 0px;
 }
 
-.list-nav {
+.navigation__list {
     display: flex;
 }
 
-.list-nav .item:not(:last-child) {
+.navigation__list .item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -94,10 +92,11 @@
 
 .icon-contsct {
     fill: currentColor;
+    margin-right: 10px;
 }
 
-.nav-item:hover,
-.nav-item:focus,
+.navigation__link:hover,
+.navigation__link:focus,
 .contact-item:hover,
 .contact-item:focus,
 .mail:hover,
@@ -124,6 +123,3 @@
     margin-right: 0;
 }
 
-.icon-contsct {
-    margin-right: 10px;
-}

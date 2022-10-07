@@ -88,13 +88,13 @@ body {
   color: var(--white-text);
 }
 
-.nav-item.current {
+.navigation__link--current {
   color: var(--accent);
   display: block;
   position: relative;
 }
 
-.item .current::after {
+.navigation__link--current::after {
   position: absolute;
   content: "";
   display: block;
@@ -106,31 +106,31 @@ body {
 }
 
 /* Навигация  */
-.header-nav {
+.navigation {
   font-weight: 500;
   line-height: 1.143;
   letter-spacing: 0.02em;
 }
 
-.nav-item {
+.navigation__link {
   text-decoration: none;
   color: var(--main-text);
   -webkit-transition: color var(--time-function);
   transition: color var(--time-function);
 }
 
-.list-nav .nav-item {
+.navigation__list .navigation__link {
   display: block;
   padding: 32px 0px;
 }
 
-.list-nav {
+.navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.list-nav .item:not(:last-child) {
+.navigation__list .item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -159,10 +159,11 @@ body {
 
 .icon-contsct {
   fill: currentColor;
+  margin-right: 10px;
 }
 
-.nav-item:hover,
-.nav-item:focus,
+.navigation__link:hover,
+.navigation__link:focus,
 .contact-item:hover,
 .contact-item:focus,
 .mail:hover,
@@ -187,17 +188,6 @@ body {
 
 .contact-item:last-child {
   margin-right: 0;
-}
-
-.icon-contsct {
-  margin-right: 10px;
-}
-
-.team-member {
-  background-color: var(--background-color);
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
 /* Герой */
@@ -256,6 +246,13 @@ body {
   line-height: 1.19;
   margin-bottom: 10px;
   margin-top: 0;
+}
+
+.team-member {
+  background-color: var(--background-color);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-disc {
