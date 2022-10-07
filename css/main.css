@@ -93,7 +93,6 @@ body {
   display: block;
   position: relative;
 }
-
 .navigation__link--current::after {
   position: absolute;
   content: "";
@@ -141,7 +140,16 @@ body {
   margin-left: auto;
 }
 
-.contact .contact-item {
+.contact .item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.contact__link {
+  color: var(--secondary-text);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.143;
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,9 +160,14 @@ body {
   -webkit-transition: color var(--time-function);
   transition: color var(--time-function);
 }
-
-.contact .item:not(:first-child) {
-  margin-left: 50px;
+.contact__link:hover {
+  color: var(--accent);
+}
+.contact__link:focus {
+  color: var(--accent);
+}
+.contact__link:last-child {
+  margin-right: 0;
 }
 
 .icon-contsct {
@@ -164,8 +177,6 @@ body {
 
 .navigation__link:hover,
 .navigation__link:focus,
-.contact-item:hover,
-.contact-item:focus,
 .mail:hover,
 .mail:focus,
 .address:hover,
@@ -178,16 +189,12 @@ body {
   list-style-type: none;
 }
 
-.contact-item {
+.contact__link {
   color: var(--secondary-text);
   letter-spacing: 0.02em;
   font-weight: 500;
   line-height: 1.143;
   text-decoration: none;
-}
-
-.contact-item:last-child {
-  margin-right: 0;
 }
 
 /* Герой */
