@@ -58,6 +58,12 @@
     text-decoration: none;
     color: var(--main-text);
     transition: color var(--time-function);
+        &:hover {
+            color: var(--accent)
+        };
+        &:focus{
+            color: var(--accent)
+        };
 }
 
 .navigation__list .navigation__link {
@@ -103,14 +109,11 @@
 }
 
 
-
 .icon-contsct {
     fill: currentColor;
     margin-right: 10px;
 }
 
-.navigation__link:hover,
-.navigation__link:focus,
 .mail:hover,
 .mail:focus,
 .address:hover,
