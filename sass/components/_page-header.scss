@@ -55,6 +55,8 @@
 }
 
 .navigation__link {
+    display: block;
+    padding: 32px 0px;
     text-decoration: none;
     color: var(--main-text);
     transition: color var(--time-function);
@@ -65,12 +67,6 @@
             color: var(--accent)
         };
 }
-
-.navigation__list .navigation__link {
-    display: block;
-    padding: 32px 0px;
-}
-
 .navigation__list {
     display: flex;
 }
@@ -125,12 +121,3 @@
 .benefit-item {
     list-style-type: none;
 }
-
-.contact__link {
-    color: var(--secondary-text);
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    line-height: 1.143;
-    text-decoration: none;
-}
-
