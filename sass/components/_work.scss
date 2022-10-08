@@ -2,11 +2,10 @@
     padding-bottom: 94px;
 }
 .work__title {
+    @include font (36px, 700, 1.17);
+
     margin-bottom: 50px;
     margin-top: 0;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
     text-align: center;
 }
 .work__list {

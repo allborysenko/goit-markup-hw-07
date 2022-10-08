@@ -201,12 +201,12 @@ body {
 }
 
 .hero {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
   width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -413,11 +413,11 @@ body {
 }
 
 .work__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
   margin-bottom: 50px;
   margin-top: 0;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
   text-align: center;
 }
 
@@ -466,11 +466,11 @@ body {
 }
 
 .team__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
   margin-top: 0px;
   margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
   text-align: center;
 }
 
@@ -498,8 +498,8 @@ body {
 }
 
 .card__title {
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.19;
   margin-bottom: 10px;
   margin-top: 0;
