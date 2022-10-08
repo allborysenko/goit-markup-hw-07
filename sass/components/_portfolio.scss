@@ -52,18 +52,17 @@
 }
 
 .cards__title {
+    @include font(18px, 700, 2.0);
+
     width: 322px;
     margin-top: 0px;
     margin-bottom: 4px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--main-text);
 }
 .cards__subtitle {
-    font-size: 16px;
-    line-height: 1.88;
+    @include font(16px, 400, 1.88);
+
     color: var(--secondary-text);
 }
 

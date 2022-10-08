@@ -56,7 +56,6 @@
     color: var(--secondary-text);
 }
 
-;
 .input-wrap {
     position: relative;
 }
@@ -91,22 +90,21 @@
     }
 }
 .checkbox {
-    display: inline-block;
+    @extend %centred;
+
     width: 16px;
     height: 15px;
     border-radius: 2px;
     margin-right: 7px;
     border: 2px solid #212121;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     transition: background-color var(--time-function), border var(--time-function);
 }
 .accept {
     display: flex;
     align-items: center;
+    
+   
     color: var(--secondary-text);
     line-height: 1.714;
     margin-bottom: 30px;
@@ -114,6 +112,7 @@
 .accept__label {
     display: flex;
     align-items: center;
+
 }
  .accept__input:checked +.checkbox {
     background-color: var(--accent);

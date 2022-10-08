@@ -4,8 +4,7 @@
 }
 
 .main-nav {
-    display: flex;
-    align-items: center;
+    @extend %centred;
 }
 
 .navigation__link--current {
@@ -23,8 +22,6 @@
             bottom: -1px;
         }
 }
-
-/* Навигация  */
 .navigation {
     font-weight: 500;
     line-height: 1.143;
@@ -47,7 +44,6 @@
             margin-right: 50px;
         }
 }
-
 .contact {
     display: flex;
     margin-left: auto;
@@ -57,14 +53,14 @@
 }
 
 .contact__link {
+    @include font(14px, 500, 1.143);
+    @extend %centred;
+
     color: var(--secondary-text);
     letter-spacing: 0.02em;
-    font-weight: 500;
-    line-height: 1.143;
+
     text-decoration: none;
-    display: flex;
     padding: 32px 0px;
-    align-items: center;
     transition: color var(--time-function);
     &:hover, &:focus{
         color: var(--accent)
@@ -76,8 +72,4 @@
 .contact__icon {
     fill: currentColor;
     margin-right: 10px;
-}
-
-.list{
-    list-style-type: none;
 }

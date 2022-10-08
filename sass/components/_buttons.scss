@@ -1,14 +1,13 @@
 .order-bnt {
+    @include font (16px, 700, 1.875);
+
     padding: 10px 32px;
     border-radius: 4px;
     cursor: pointer;
     background-color: var(--accent);
     font-family: 'Roboto', sans-serif;
     color: var(--white-text);
-    font-weight: 700;
-    line-height: 1.88;
     letter-spacing: 0.06em;
-    font-size: 16px;
     border-color: transparent;
     transition: background-color var(--time-function);
         &:hover, &:focus, &:active {
@@ -17,6 +16,8 @@
          }
 
 .modal__close-button {
+    @extend %centred;
+    
     position: absolute;
     right: 8px;
     top: 8px;
@@ -26,9 +27,7 @@
     width: 30px;
     height: 30px;
     fill: var(--black-text);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     cursor: pointer;
 }
 .modal__icon-close {
@@ -38,17 +37,16 @@
     fill: var(--accent);
 }
 .modal__btn {
+    @include font (16px, 700, 1.875);
+    @extend %centred;
+
     padding: 10px 52px;
     background-color: var(--accent);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     letter-spacing: 0.06em;
     color: var(--white-text);
-    font-weight: 700;
-    line-height: 1.88;
+
     border: none;
     margin: 0 auto;
     cursor: pointer;
@@ -59,20 +57,20 @@
 }
 
 .filter {
-    display: flex;
+    @extend %centred;
+
     margin-bottom: 50px;
-    justify-content: center;
 }
 
 .filter__item:not(:last-child) {
     margin-right: 8px;
 }
 .filter__btn {
+    @include font (16px, 500, 1.62);
+
     font-family: inherit;
     cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
+
     text-align: center;
     background-color: var(--bgc-team);
     border-radius: 4px;
@@ -90,28 +88,19 @@
 }
 
 .submit__btn {
+    @include font (16px, 700, 1.875);
+    @extend %centred;
 
     background-color: var(--accent);
     padding: 10px 28px;
+    margin-left: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
     border-color: transparent;
-
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--white-text);
-
-    margin-left: 10px;
-
     cursor: pointer;
-
     transition: background-color var(--time-function);
 
         &:hover, &:focus {

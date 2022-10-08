@@ -1,8 +1,6 @@
-/* Герой */
 .hero-section {
     background-color: #C4C4C4;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bgr.jpg");
-    ;
     max-width: 1600px;
     margin: 0 auto;
     background-repeat: no-repeat;
@@ -12,7 +10,6 @@
     padding-top: 200px;
     padding-bottom: 200px;
 }
-
 .hero {
     @include font (44px, 900, 1.36);
 
