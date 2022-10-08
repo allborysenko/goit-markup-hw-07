@@ -1,39 +1,29 @@
-/* Чим займаємося  */
-.examples {
+.work {
     padding-bottom: 94px;
 }
-
-.workimg {
-    display: block;
-    max-width: 100%;
-}
-
-.what-to-do {
-    display: flex;
-}
-
-.whatwedo {
+.work__title {
     margin-bottom: 50px;
     margin-top: 0;
-}
-
-.what-to-do .item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.whatwedo,
-.team-tile {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
-
-.what-to-do .item {
-    position: relative;
+.work__list {
+    display: flex;
 }
+.work__item {
+    position: relative;
 
-.examples-title {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+.work__img {
+    display: block;
+    max-width: 100%;
+}
+.work__subtitle {
     position: absolute;
     height: 70px;
     width: 100%;
