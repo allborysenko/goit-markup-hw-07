@@ -1,17 +1,3 @@
-/* Логотип */
-.logo {
-    margin-right: 93px;
-    display: block;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-}
-
-.logo-accent {
-    color: var(--accent)
-}
 
 .header {
     align-items: center;
@@ -21,14 +7,6 @@
 .main-nav {
     display: flex;
     align-items: center;
-}
-
-.container>a {
-    color: var(--black-text);
-}
-
-.logo-white {
-    color: var(--white-text);
 }
 
 .navigation__link--current {
@@ -60,19 +38,15 @@
     text-decoration: none;
     color: var(--main-text);
     transition: color var(--time-function);
-        &:hover {
-            color: var(--accent)
-        };
-        &:focus{
+        &:hover, &:focus {
             color: var(--accent)
         };
 }
 .navigation__list {
     display: flex;
-}
-
-.navigation__list .item:not(:last-child) {
-    margin-right: 50px;
+        & :not(:last-child) {
+            margin-right: 50px;
+        }
 }
 
 .contact {
@@ -93,10 +67,7 @@
     padding: 32px 0px;
     align-items: center;
     transition: color var(--time-function);
-    &:hover{
-        color: var(--accent)
-        };
-    &:focus{
+    &:hover, &:focus{
         color: var(--accent)
         };
     &:last-child {
@@ -119,5 +90,10 @@
 
 .item,
 .benefit-item {
+    list-style-type: none;
+}
+
+
+.list{
     list-style-type: none;
 }
