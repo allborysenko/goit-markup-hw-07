@@ -49,6 +49,20 @@ body {
   font-weight: 400;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -116,7 +130,7 @@ body {
   margin-left: auto;
 }
 
-.contact .item:not(:first-child) {
+.contact__item:not(:first-child) {
   margin-left: 50px;
 }
 
@@ -143,14 +157,9 @@ body {
   margin-right: 0;
 }
 
-.icon-contsct {
+.contact__icon {
   fill: currentColor;
   margin-right: 10px;
-}
-
-.item,
-.benefit-item {
-  list-style-type: none;
 }
 
 .list {
@@ -665,20 +674,6 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .filter {

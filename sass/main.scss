@@ -1,53 +1,6 @@
-:root {
-    --accent: #2196F3;
-    --accent-hover: #188CE8;
-    --main-text: #212121;
-    --background-color: #FFFFFF;
-    --secondary-text: #757575;
-    --white-text: #FFFFFF;
-    --black-text: #000000;
-    --hero-bgc: #2F303A;
-    --bgc-poster: #EEEEEE;
-    --bgc-header: #ECECEC;
-    --bgc-team: #F5F4FA;
-    --footer-address: rgba(255, 255, 255, 0.6);
-    --border-header: #ECECEC;
-    --time-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    padding: 0;
-    margin: 0;
-}
-
-ul,
-p,
-li {
-    padding: 0;
-    margin: 0;
-}
-
-.container {
-    margin: 0 auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.03em;
-    color: var(--main-text);
-    background-color: var(--background-color);
-    font-size: 14px;
-    font-weight: 400;
-}
-
+@import './utils/vars';
+@import './components/base';
 @import './components/page-header';
 @import './components/logo';
 
@@ -186,18 +139,7 @@ body {
     gap: 30px;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+
 
 .filter {
     padding: 94px 0px;
