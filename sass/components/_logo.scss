@@ -1,4 +1,3 @@
-/* Логотип */
 .logo {
     margin-right: 93px;
     display: block;
@@ -7,15 +6,11 @@
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-}
-
-.logo-accent {
-    color: var(--accent)
-}
-.container>a {
     color: var(--black-text);
 }
-
-.logo-white {
+.logo__title {
+    color: var(--accent)
+}
+.footer_logo{
     color: var(--white-text);
 }

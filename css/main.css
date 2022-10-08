@@ -148,13 +148,6 @@ body {
   margin-right: 10px;
 }
 
-.mail:hover,
-.mail:focus,
-.address:hover,
-.address:focus {
-  color: var(--accent);
-}
-
 .item,
 .benefit-item {
   list-style-type: none;
@@ -164,7 +157,6 @@ body {
   list-style-type: none;
 }
 
-/* Логотип */
 .logo {
   margin-right: 93px;
   display: block;
@@ -173,17 +165,14 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-}
-
-.logo-accent {
-  color: var(--accent);
-}
-
-.container > a {
   color: var(--black-text);
 }
 
-.logo-white {
+.logo__title {
+  color: var(--accent);
+}
+
+.footer_logo {
   color: var(--white-text);
 }
 
@@ -487,12 +476,9 @@ body {
   background-color: var(--hero-bgc);
 }
 
-.main-address {
+.address {
   margin-top: 20px;
   font-style: normal;
-}
-
-.address {
   color: var(--white-text);
   text-decoration: none;
   line-height: 1.71;
@@ -500,33 +486,23 @@ body {
   transition: color var(--time-function);
 }
 
-.mail {
+.adress__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
   color: var(--footer-address);
   text-decoration: none;
   line-height: 1.71;
   -webkit-transition: color var(--time-function);
   transition: color var(--time-function);
 }
-
-.footer-conact .item:not(:last-child) {
-  margin-bottom: 9px;
+.address__link:hover, .address__link:focus {
+  color: var(--accent);
 }
 
-.btn-nav {
-  font-family: inherit;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  background-color: var(--bgc-team);
-  border-radius: 4px;
-  padding: 6px 22px;
-  border: none;
-  -webkit-transition: color var(--time-function), background-color var(--time-function), -webkit-box-shadow var(--time-function);
-  transition: color var(--time-function), background-color var(--time-function), -webkit-box-shadow var(--time-function);
-  transition: color var(--time-function), box-shadow var(--time-function), background-color var(--time-function);
-  transition: color var(--time-function), box-shadow var(--time-function), background-color var(--time-function), -webkit-box-shadow var(--time-function);
+.address__link--white {
+  color: var(--white-text);
 }
 
 .footer-сall {
@@ -628,6 +604,23 @@ body {
 }
 
 /* Навигация портфолио  */
+.btn-nav {
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background-color: var(--bgc-team);
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: none;
+  -webkit-transition: color var(--time-function), background-color var(--time-function), -webkit-box-shadow var(--time-function);
+  transition: color var(--time-function), background-color var(--time-function), -webkit-box-shadow var(--time-function);
+  transition: color var(--time-function), box-shadow var(--time-function), background-color var(--time-function);
+  transition: color var(--time-function), box-shadow var(--time-function), background-color var(--time-function), -webkit-box-shadow var(--time-function);
+}
+
 .btn-nav:hover,
 .btn-nav:focus {
   background-color: var(--accent);
