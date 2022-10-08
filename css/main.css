@@ -172,7 +172,7 @@ body {
   color: var(--accent);
 }
 
-.footer_logo {
+.footer__logo {
   color: var(--white-text);
 }
 
@@ -463,17 +463,23 @@ body {
   fill: var(--accent);
 }
 
-/* Футер */
 .footer {
   padding: 60px 0px;
-}
-
-.footer .logo {
-  margin-right: 0;
-}
-
-.footer {
   background-color: var(--hero-bgc);
+}
+
+.footer-wrapper {
+  display: inline-block;
+  margin-right: 70px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .address {
@@ -505,6 +511,10 @@ body {
   color: var(--white-text);
 }
 
+.footer__social__icon {
+  fill: var(--white-text);
+}
+
 .footer-сall {
   color: var(--white-text);
   font-weight: 700;
@@ -514,32 +524,17 @@ body {
   margin-bottom: 20px;
 }
 
-.footer-social {
+.subscribe {
+  margin-left: 93px;
+}
+
+.submit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
 }
 
-.footer-wrapper {
-  display: inline-block;
-  margin-right: 70px;
-}
-
-.footer-socialnetwork {
-  fill: var(--white-text);
-}
-
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-.footer-mail {
+.submit__input {
   background: none;
   width: 358px;
   height: 50px;
@@ -551,14 +546,9 @@ body {
   padding-left: 16px;
   outline: none;
 }
-
-.footer-mail:focus {
+.submit__input:focus {
   border-color: var(--white-text);
   color: var(--white-text);
-}
-
-.mailing-list {
-  margin-left: 93px;
 }
 
 .signup {
@@ -585,12 +575,6 @@ body {
   cursor: pointer;
   -webkit-transition: background-color var(--time-function);
   transition: background-color var(--time-function);
-}
-
-.submit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .signup:hover,

@@ -1,16 +1,16 @@
-/* Футер */
 .footer {
     padding: 60px 0px;
-}
-
-.footer .logo {
-    margin-right: 0;
-}
-
-.footer {
     background-color: var(--hero-bgc);
 }
-// ****
+.footer-wrapper {
+    display: inline-block;
+    margin-right: 70px;
+}
+.wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
 .address {
     margin-top: 20px;
     font-style: normal;
@@ -38,47 +38,3 @@
 
 
 
-.footer-сall {
-    color: var(--white-text);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.footer-social {
-    display: flex;
-    gap: 10px;
-}
-
-.footer-wrapper {
-    display: inline-block;
-    margin-right: 70px;
-}
-
-.footer-socialnetwork {
-    fill: var(--white-text);
-}
-
-.wrapper {
-    display: flex;
-    align-items: baseline;
-}
-
-.footer-mail {
-    background: none;
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    color: var(---footer-address);
-    border-radius: 4px;
-    padding-left: 16px;
-    outline: none;
-}
-
-.footer-mail:focus {
-    border-color: var(--white-text);
-    color: var(--white-text);
-}
